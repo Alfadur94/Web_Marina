@@ -1,0 +1,94 @@
+﻿/* Reset some default styles */
+body, h1, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and font for the entire page */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the heading */
+#heading {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the form container */
+div {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Style labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style text inputs */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Style the back button */
+#startpage button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Style the detail image */
+#detail-image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Additional styling for specific elements, customize as needed */
+.label-sid,
+.label-name,
+.label-laenge,
+.label-motorleistung,
+.label-issegler,
+.label-tiefgang,
+.label-baujahr,
+.label-bild {
+    font-weight: bold;
+}
+
+.input-sid,
+.input-name,
+.input-laenge,
+.input-motorleistung,
+.input-issegler,
+.input-tiefgang,
+.input-baujahr,
+.input-bild {
+    /* Add specific input field styling here */
+}

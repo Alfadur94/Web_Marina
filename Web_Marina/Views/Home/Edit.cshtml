@@ -1,0 +1,63 @@
+﻿@using Web_Marina.Models
+@model Boot
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<link href="~/cssstylesheets/editstyle.css" rel="stylesheet"/>
+	<title>Update Artikel</title>
+</head>
+<body>
+	<div id="heading">
+		<h1>Update-Boot</h1>
+	</div>
+	<div id="startpage">
+		<button type="button" onclick="history.back(-1)">Zurück</button>
+	</div>
+	<div>
+		<form method="post">
+			<div>
+				<label for="SID" class="label-sid">SID</label>
+				<input asp-for="SID" id="SID" class="input-sid" />
+			</div>
+			<div>
+				<label for="Name" class="label-name">Name</label>
+				<input asp-for="Name" id="Name" class="input-name" />
+			</div>
+			<div>
+				<label for="Laenge" class="label-laenge">Länge</label>
+				<input asp-for="Laenge" id="Laenge" class="input-laenge" />
+			</div>
+			<div>
+				<label for="Motorleistung" class="label-motorleistung">Motorleistung</label>
+				<input asp-for="Motorleistung" id="Motorleistung" class="input-motorleistung" />
+			</div>
+			<div>
+				<label for="IsSegler" class="label-issegler">Ist Segelschiff?</label>
+				<input asp-for="IsSegler" id="IsSegler" class="input-issegler" />
+			</div>
+			<div>
+				<label for="Tiefgang" class="label-tiefgang">Tiefgang</label>
+				<input asp-for="Tiefgang" id="Tiefgang" class="input-tiefgang" />
+			</div>
+			<div>
+				<label for="Baujahr" class="label-baujahr">Baujahr</label>
+				<input asp-for="Baujahr" id="Baujahr" class="input-baujahr" />
+			</div>
+			<div>
+				<label for="Bild" class="label-bild">Bild</label>
+				<input asp-for="Bild" id="Bild" class="input-bild" />
+				<div id="detail-image">
+					<img src="~/images/@Model.Bild" height="100" />
+				</div>
+			</div>
+			<div>
+				<button type="submit">Update</button>
+				<button type="reset">Reset</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

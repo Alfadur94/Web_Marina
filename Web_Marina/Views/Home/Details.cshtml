@@ -1,0 +1,43 @@
+﻿@using Web_Marina.Models
+@model Boot
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<link href="~/cssstylesheets/detailstyle.css" rel="stylesheet" />
+	<title>Details</title>
+</head>
+<body>
+	<div id="heading">
+		<h1>Artikel-Details</h1>
+	</div>
+	<div id="startpage">
+		<button type="button" onclick="history.back(-1)">Zurück</button>
+	</div>
+	<div id="detail-container">
+		<div id="detail-headings">
+			<h2>SID</h2>
+			<h2>Name</h2>
+			<h2>Länge</h2>
+			<h2>Motorleistung</h2>
+			<h2>IsSegler</h2>
+			<h2>Tiefgang</h2>
+			<h2>Baujahr</h2>
+		</div>
+		<div id="detail-info">
+			<p>@Model.SID</p>
+			<p>@Model.Name</p>
+			<p>@Model.Laenge</p>
+			<p>@Model.Motorleistung</p>
+			<p>@Model.IsSegler</p>
+			<p>@Model.Tiefgang</p>
+			<p>@Model.Baujahr</p>
+		</div>
+		<div id="detail-image">
+			<img src="~/images/@Model.Bild" />
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<link href="~/lib/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+	<link href="~/lib/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+	<link href="~/cssstylesheets/indexstyle.css" rel="stylesheet" />
+	<title>Index</title>
+</head>
+<body>
+	<div id="heading">
+		<h1>Boote</h1>
+	</div>
+	<div id="adminTools">
+		<a href="~/home/admintools">Admin</a>
+	</div>
+	<div id="table">
+		<table border="1" width="600">
+			<tr>
+				<th>SID</th>
+				<th>Name</th>
+				<th>Länge</th>
+				<th>Motorleistung</th>
+				<th>IsSegler</th>
+				<th>Tiefgang</th>
+				<th>Baujahr</th>
+				<th>Bild</th>
+			</tr>
+			@foreach (var Boot in Model)
+			{
+				<tr>
+					<td>@Boot.SID</td>
+					<td>@Boot.Name</td>
+					<td>@Boot.Laenge</td>
+					<td>@Boot.Motorleistung</td>
+					<td>@Boot.IsSegler</td>
+					<td>@Boot.Tiefgang</td>
+					<td>@Boot.Baujahr</td>
+					<td><img src="~/images/@Boot.Bild" height="50" width="50" /></td>
+					<td>
+						<a href="/home/details?SID=@Boot.SID"><i style="color:grey" class="bi-search"></i></a>
+					</td>
+				</tr>
+			}
+		</table>
+	</div>
+</body>
+</html>
